@@ -20,7 +20,7 @@ Mở bằng một server tĩnh bất kỳ, ví dụ `npx serve .`, rồi vào `h
 
 ## Link cá nhân hoá
 
-Thêm `?to=Tên` vào cuối link, ví dụ `https://<ten-mien>/?to=Minh%20Anh`.
+Thêm `?to=Tên` vào cuối link, ví dụ `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh%20Anh`.
 Phong bì sẽ hiện "Gửi Minh Anh", tên được điền sẵn vào RSVP và tờ note.
 
 ## Ca dự lễ
@@ -29,8 +29,8 @@ Có 2 ca, khai báo trong `assets/js/config.js`. Thêm mã ca vào tham số `r`
 
 | Ca | Giờ | Link mẫu |
 |---|---|---|
-| Ca 1 | 15:00 – 16:00 | `https://<ten-mien>/?to=Minh%20Anh&r=k7q2` |
-| Ca 2 | 16:00 – 17:00 | `https://<ten-mien>/?to=Minh%20Anh&r=m3x9` |
+| Ca 1 | 15:00 – 16:00 | `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh%20Anh&r=k7q2` |
+| Ca 2 | 16:00 – 17:00 | `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh%20Anh&r=m3x9` |
 
 Link không có `r` (hoặc mã sai) sẽ dùng Ca 1. Giờ trên thiệp, đếm ngược, nút thêm vào lịch
 và câu xác nhận RSVP đổi theo ca; cột **Ca** trong sheet RSVP ghi khách thuộc ca nào.
@@ -40,5 +40,5 @@ và câu xác nhận RSVP đổi theo ca; cột **Ca** trong sheet RSVP ghi khá
 
 1. Kết nối Google Sheet theo `apps-script/README.md`.
 2. Deploy lên Vercel (Framework preset: **Other**, không cần build).
-3. Đổi `og:image` trong `index.html` thành URL tuyệt đối `https://<ten-mien>/share.jpg`.
+3. Nếu đổi tên miền: sửa `og:url` và `og:image` trong `index.html`.
 4. Gửi thử link vào Zalo/Messenger để xem ảnh preview.

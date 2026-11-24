@@ -6,7 +6,7 @@
  * Để trống = chế độ demo: dữ liệu chỉ lưu trong trình duyệt đang xem.
  *
  * sessions: các ca dự lễ. Mã ca nằm trong tham số r của link, ví dụ
- *   https://<ten-mien>/?to=Minh%20Anh&r=k7q2
+ *   https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh%20Anh&r=k7q2
  * Mã cố ý viết ngẫu nhiên để khách không đoán ra là có nhiều ca.
  * Link không có r (hoặc r sai) sẽ dùng ca defaultSession.
  * label: tên ca ghi vào cột "Ca" của Google Sheet, khách không thấy.
