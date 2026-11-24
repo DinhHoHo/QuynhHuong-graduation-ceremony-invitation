@@ -13,7 +13,8 @@
 
   /* ---------- Cá nhân hoá: ?to=Tên khách ---------- */
   var params = new URLSearchParams(location.search);
-  var guest = (params.get('to') || params.get('ten') || '').replace(/\s+/g, ' ').trim().slice(0, 40);
+  // ?to=Minh-Anh → "Minh Anh" (dấu - thay cho dấu cách; %20 và + vẫn dùng được)
+  var guest = (params.get('to') || params.get('ten') || '').replace(/-+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 40);
   if (guest) {
     $$('[data-to]').forEach(function (el) { el.textContent = guest; });
     $$('[data-to-input]').forEach(function (el) { if (!el.value) el.value = guest; });

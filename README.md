@@ -20,7 +20,7 @@ Mở bằng một server tĩnh bất kỳ, ví dụ `npx serve .`, rồi vào `h
 
 ## Link cá nhân hoá
 
-Thêm `?to=Tên` vào cuối link, ví dụ `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh%20Anh`.
+Thêm `?to=Tên` vào cuối link, ví dụ `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh-Anh`. Dùng dấu `-` thay cho dấu cách (`Phú-Vinh` → "Phú Vinh").
 Phong bì sẽ hiện "Gửi Minh Anh", tên được điền sẵn vào RSVP và tờ note.
 
 ## Ca dự lễ
@@ -29,8 +29,8 @@ Có 2 ca, khai báo trong `assets/js/config.js`. Thêm mã ca vào tham số `r`
 
 | Ca | Giờ | Link mẫu |
 |---|---|---|
-| Ca 1 | 15:00 – 16:00 | `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh%20Anh&r=k7q2` |
-| Ca 2 | 16:00 – 17:00 | `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh%20Anh&r=m3x9` |
+| Ca 1 | 15:00 – 16:00 | `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh-Anh&r=k7q2` |
+| Ca 2 | 16:00 – 17:00 | `https://quynhhuong-graduation-ceremony.vercel.app/?to=Minh-Anh&r=m3x9` |
 
 Link không có `r` (hoặc mã sai) sẽ dùng Ca 1. Giờ trên thiệp, đếm ngược, nút thêm vào lịch
 và câu xác nhận RSVP đổi theo ca; cột **Ca** trong sheet RSVP ghi khách thuộc ca nào.
